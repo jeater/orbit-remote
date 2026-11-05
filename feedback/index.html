@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Orbit Remote · Feedback</title>
+<title>Sofa RC · Feedback</title>
 <link rel="icon" href="../icon.png">
 <style>
   * { box-sizing: border-box; }
@@ -32,7 +32,7 @@
 <body>
 <main>
   <header>
-    <img src="../icon.png" alt="Orbit Remote icon">
+    <img src="../icon.png" alt="Sofa RC icon">
     <h1 data-t="title"></h1>
     <p class="tagline" data-t="intro"></p>
   </header>
@@ -84,7 +84,7 @@
   const lang = wanted.slice(0, 2).toLowerCase() in strings ? wanted.slice(0, 2).toLowerCase() : 'en';
   const t = strings[lang];
   document.documentElement.lang = lang;
-  document.title = `Orbit Remote · ${t.title}`;
+  document.title = `Sofa RC · ${t.title}`;
   document.querySelectorAll('[data-t]').forEach((el) => { el.textContent = t[el.dataset.t]; });
 
   const $ = (id) => document.getElementById(id);
